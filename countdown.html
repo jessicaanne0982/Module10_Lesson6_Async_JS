@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        div {
+            display: grid;
+            max-width: 600px; 
+            margin: 30px auto; 
+            background-color: #e9e5e5;
+            border-radius: 10px; padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+
+        p {
+            margin: auto;
+            font-size: 50px;
+            color: #333;
+        }
+
+        label {
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #333
+        }
+
+        input[type="number"] {
+            width: 50%;
+            padding: 8px;
+            margin: auto;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 20%;
+            padding: 10px 20px;
+            margin: auto;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 50px;
+            font-size: 14px;
+        }
+    </style>
+    <script src="countdown.js" defer></script>
+</head>
+<body>
+    <h1>Countdown Timer</h1>
+    <div id="userInput">
+        <label for="timeInput">Enter time in seconds:</label>
+        <input type="number" id="timeInput" name="timeInput" min="1" placeholder="time">
+        <button onclick="startCountdown()">Start Countdown</button>
+        <p id="countdownTimer"></p>
+    </div>
+</body>
+</html>
+
